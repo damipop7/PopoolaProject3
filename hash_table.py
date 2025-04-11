@@ -1,5 +1,5 @@
 class HashTable:
-    def __init__(self, initial_size=8, load_factor=0.7, resize_strategy=1):
+    def __init__(self, initial_size, load_factor, resize_strategy):
         """
         Initialize the hash table.
         :param initial_size: Initial size of the hash table.
@@ -42,16 +42,17 @@ class HashTable:
     def insert(self, string_to_insert):
         """
         Insert a string into the hash table.
-        :param string_to_insert: The string to insert.
         """
-        if self.count / self.size >= self.load_factor:
+        # Check load factor BEFORE insertion
+        current_load = (self.count + 1) / self.size
+        if current_load >= self.load_factor:
             self._resize()
 
         index = self._hash(string_to_insert)
         while self.table[index] is not None:
             if self.table[index] == string_to_insert:
-                return  # String already exists, do nothing
-            index = (index + 1) % self.size  # Linear probing
+                return  # String already exists
+            index = (index + 1) % self.size
 
         self.table[index] = string_to_insert
         self.count += 1
