@@ -2,18 +2,16 @@ import random
 
 class DataGenerator:
     @staticmethod
-    def generate_unique_strings(size=131072):
+    def generate_dataset(size=131072):
         """Generate unique 8-digit strings"""
         numbers = set()
         while len(numbers) < size:
-            num = str(random.randint(10000000, 99999999))
+            num = f"{random.randint(10000000, 99999999)}"
             numbers.add(num)
         
         numbers = list(numbers)
-        # Split into add and check values
-        add_values = numbers[:size//2]
-        check_values = numbers[size//2:]
-        return numbers, add_values, check_values
+        mid = size // 2
+        return numbers, numbers[:mid], numbers[mid:]
 
     @staticmethod
     def verify_unique(values):

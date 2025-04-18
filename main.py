@@ -7,7 +7,7 @@ def main():
     
     # Run rehash timing analysis
     q_values = range(4, 18)
-    rehash_results = timer.time_rehash_strategies(q_values)
+    rehash_results = timer.time_rehash_strategies(q_values)  # This matches the method name now
     
     # Run load factor timing analysis
     load_factors, load_results = timer.time_load_factors()
