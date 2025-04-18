@@ -1,4 +1,6 @@
 class HashTable:
+    DELETED = "<DELETED>"
+
     def __init__(self, initial_size, load_factor, resize_strategy):
         """
         Initialize the hash table.
@@ -49,12 +51,17 @@ class HashTable:
             self._resize()
 
         index = self._hash(string_to_insert)
+        first_deleted_index = None
+
         while self.table[index] is not None:
             if self.table[index] == string_to_insert:
                 return  # String already exists
+            if self.table[index] == self.DELETED and first_deleted_index is None:
+                first_deleted_index = index
             index = (index + 1) % self.size
 
-        self.table[index] = string_to_insert
+        insert_index = first_deleted_index if first_deleted_index is not None else index
+        self.table[insert_index] = string_to_insert
         self.count += 1
 
     def find(self, string_to_find):
@@ -64,8 +71,28 @@ class HashTable:
         :return: True if the string is found, False otherwise.
         """
         index = self._hash(string_to_find)
-        while self.table[index] is not None:
+        steps = 0
+        while self.table[index] is not None and steps < self.size:
             if self.table[index] == string_to_find:
                 return True
-            index = (index + 1) % self.size  # Linear probing
+            index = (index + 1) % self.size
+            steps += 1
         return False
+
+    def delete(self, string_to_delete):
+        index = self._hash(string_to_delete)
+        steps = 0
+        while self.table[index] is not None and steps < self.size:
+            if self.table[index] == string_to_delete:
+                self.table[index] = self.DELETED
+                self.count -= 1
+                return True
+            index = (index + 1) % self.size
+            steps += 1
+        return False
+
+    def contains(self, string):
+        return self.find(string)
+
+    def __str__(self):
+        return str([item for item in self.table])

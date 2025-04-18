@@ -1,59 +1,73 @@
-# PopoolaProject3
+# Hash Table Analysis Project
 
-## Hash Table Implementation Project
+## Environment
+- Language: Python 3.8+
+- IDE: Visual Studio Code
+- Required packages: numpy, matplotlib
 
-## Development Environment
-- **Language**: Python 3.11
-- **IDE**: Visual Studio Code
-- **Required Packages**: pytest (for running tests)
-
-## Setup Instructions
-
-1. Clone the repository:
+## Installation
 ```bash
-git clone https://github.com/damipop7/PopoolaProject3.git
-cd PopoolaProject3
-```
-
-2. Create and activate a virtual environment:
-```bash
-python -m venv .venv
-.venv\Scripts\activate  # On Windows
-```
-
-3. Install required packages:
-```bash
-pip install pytest
+pip install numpy matplotlib
 ```
 
 ## Project Structure
-```
-PopoolaProject3/
-├── hash_table.py     # Hash table implementation
-├── test_hash_table.py # Test cases
-├── .gitignore
-└── README.md
-```
+- `hash_table.py`: Main hash table implementation
+- `data_generator.py`: Generates test data
+- `timing_analysis.py`: Performance analysis code
+- `visualizer.py`: Visualization utilities
+- `test_hash_table.py`: Unit tests
+- `main.py`: Main execution script
 
 ## Hashing
-This project implements a custom hash table that stores string values directly (without key-value pairs). The implementation includes:
+The hash table implements linear probing for collision resolution with two resize strategies:
+1. Double the table size
+2. Add 10000 to the table size
 
-- **Hash Function**: Uses Python's built-in `hash()` function modded by table size
-- **Collision Resolution**: Linear probing
-- **Dynamic Resizing**: Two strategies:
-  1. Double the size
-  2. Add 10000 to the size
-- **Load Factor**: Triggers resize when (count + 1) / size >= specified load factor
+The table stores string values and uses Python's built-in hash() function for hashing.
 
-### Key Features
-- Insert strings with collision handling
-- Find strings with boolean return
-- Dynamic resizing based on load factor
-- Two resize strategies
+## Running the Project
+```bash
+python main.py
+```
 
-### Test Cases
-The implementation includes test cases verifying:
-1. Basic insertion and finding of 5 strings
-2. Resize behavior with 23 values (single resize)
-3. Resize behavior with 24 values (double resize)
-4. Both resize strategies (doubling and adding 10000)
+For tests:
+```bash
+python -m unittest test_hash_table.py
+```
+
+## Conclusions
+
+### A. Graph Analysis
+The timing graphs show:
+- Rehash timing reveals the cost of different resize strategies
+- Load factor graphs demonstrate the theoretical vs actual performance
+- The curves follow the expected mathematical models
+
+### B. Hash Table Addition Time
+- Double strategy: O(n) amortized time for insertions
+- Add 10000 strategy: More frequent resizing but smaller individual costs
+
+### C. Strategy Comparison
+Double Strategy:
+- Pros: Better amortized performance
+- Cons: Large individual resize operations
+
+Add 10000 Strategy:
+- Pros: More predictable resize times
+- Cons: More frequent resizing operations
+
+### D. Optimal Load Factor
+Based on the timing results, a load factor between 0.5 and 0.7 provides:
+- Good balance between space usage and performance
+- Acceptable search times for both successful and unsuccessful searches
+- Reasonable resize frequency
+
+### E. Linear Probe Performance
+The measured results closely match the theoretical predictions:
+- Successful searches follow the 1/2(1 + 1/(1-λ)) curve
+- Unsuccessful searches follow the 1/2(1 + 1/(1-λ)²) curve
+
+### F. Surprising Results
+- The stability of performance up to λ = 0.7
+- The sharp degradation after λ = 0.8
+- The consistency between theoretical and actual results
