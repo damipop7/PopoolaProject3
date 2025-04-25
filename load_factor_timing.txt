@@ -7,22 +7,22 @@ Unsuccessful Search Time: 0.000001
 
 Load Factor: 0.131
 Successful Search Time: 0.000001
-Unsuccessful Search Time: 0.000002
+Unsuccessful Search Time: 0.000001
 
 Load Factor: 0.161
 Successful Search Time: 0.000001
 Unsuccessful Search Time: 0.000001
 
 Load Factor: 0.192
-Successful Search Time: 0.000001
+Successful Search Time: 0.000000
 Unsuccessful Search Time: 0.000001
 
 Load Factor: 0.223
-Successful Search Time: 0.000001
+Successful Search Time: 0.000000
 Unsuccessful Search Time: 0.000001
 
 Load Factor: 0.253
-Successful Search Time: 0.000001
+Successful Search Time: 0.000000
 Unsuccessful Search Time: 0.000001
 
 Load Factor: 0.284
@@ -30,7 +30,7 @@ Successful Search Time: 0.000001
 Unsuccessful Search Time: 0.000001
 
 Load Factor: 0.315
-Successful Search Time: 0.000001
+Successful Search Time: 0.000000
 Unsuccessful Search Time: 0.000001
 
 Load Factor: 0.346
@@ -38,7 +38,7 @@ Successful Search Time: 0.000000
 Unsuccessful Search Time: 0.000001
 
 Load Factor: 0.376
-Successful Search Time: 0.000000
+Successful Search Time: 0.000001
 Unsuccessful Search Time: 0.000001
 
 Load Factor: 0.407
@@ -46,78 +46,78 @@ Successful Search Time: 0.000000
 Unsuccessful Search Time: 0.000001
 
 Load Factor: 0.438
-Successful Search Time: 0.000000
+Successful Search Time: 0.000001
 Unsuccessful Search Time: 0.000001
 
 Load Factor: 0.468
-Successful Search Time: 0.000000
+Successful Search Time: 0.000001
 Unsuccessful Search Time: 0.000001
 
 Load Factor: 0.499
-Successful Search Time: 0.000001
+Successful Search Time: 0.000000
 Unsuccessful Search Time: 0.000001
 
 Load Factor: 0.530
 Successful Search Time: 0.000001
-Unsuccessful Search Time: 0.000021
+Unsuccessful Search Time: 0.000008
 
 Load Factor: 0.560
-Successful Search Time: 0.000001
-Unsuccessful Search Time: 0.000029
+Successful Search Time: 0.000002
+Unsuccessful Search Time: 0.000034
 
 Load Factor: 0.591
-Successful Search Time: 0.000001
-Unsuccessful Search Time: 0.000032
+Successful Search Time: 0.000002
+Unsuccessful Search Time: 0.000048
 
 Load Factor: 0.622
-Successful Search Time: 0.000001
-Unsuccessful Search Time: 0.000053
+Successful Search Time: 0.000002
+Unsuccessful Search Time: 0.000088
 
 Load Factor: 0.652
-Successful Search Time: 0.000002
-Unsuccessful Search Time: 0.000070
+Successful Search Time: 0.000003
+Unsuccessful Search Time: 0.000134
 
 Load Factor: 0.683
-Successful Search Time: 0.000002
-Unsuccessful Search Time: 0.000085
+Successful Search Time: 0.000004
+Unsuccessful Search Time: 0.000269
 
 Load Factor: 0.714
-Successful Search Time: 0.000004
-Unsuccessful Search Time: 0.000151
+Successful Search Time: 0.000007
+Unsuccessful Search Time: 0.000454
 
 Load Factor: 0.744
-Successful Search Time: 0.000006
-Unsuccessful Search Time: 0.000278
+Successful Search Time: 0.000010
+Unsuccessful Search Time: 0.001129
 
 Load Factor: 0.775
-Successful Search Time: 0.000009
-Unsuccessful Search Time: 0.001543
+Successful Search Time: 0.000015
+Unsuccessful Search Time: 0.001069
 
 Load Factor: 0.806
-Successful Search Time: 0.000028
-Unsuccessful Search Time: 0.002362
+Successful Search Time: 0.000016
+Unsuccessful Search Time: 0.001180
 
 Load Factor: 0.837
-Successful Search Time: 0.000039
-Unsuccessful Search Time: 0.003194
+Successful Search Time: 0.000019
+Unsuccessful Search Time: 0.001449
 
 Load Factor: 0.867
-Successful Search Time: 0.000038
-Unsuccessful Search Time: 0.004379
+Successful Search Time: 0.000016
+Unsuccessful Search Time: 0.001801
 
 Load Factor: 0.898
-Successful Search Time: 0.000041
-Unsuccessful Search Time: 0.005044
+Successful Search Time: 0.000019
+Unsuccessful Search Time: 0.003215
 
 Load Factor: 0.929
-Successful Search Time: 0.000042
-Unsuccessful Search Time: 0.004968
+Successful Search Time: 0.000058
+Unsuccessful Search Time: 0.007055
 
 Load Factor: 0.959
-Successful Search Time: 0.000042
-Unsuccessful Search Time: 0.004789
+Successful Search Time: 0.000018
+Unsuccessful Search Time: 0.003348
 
 Load Factor: 0.990
-Successful Search Time: 0.000039
-Unsuccessful Search Time: 0.004537
+Successful Search Time: 0.000021
+Unsuccessful Search Time: 0.004338
 
