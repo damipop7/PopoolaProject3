@@ -73,13 +73,15 @@ class TimingAnalysis:
         self._save_load_factor_results(load_factors, results, 'load_factor_timing.txt')
         return load_factors, results
 
-    def _save_results(self, results, filename):
-        """Save timing results to a file"""
+    def _save_timing_results(self, results, filename):
+        """Save timing results to file"""
         with open(filename, 'w') as f:
-            for strategy, times in results.items():
-                f.write(f"{strategy}:\n")
-                for i, time in enumerate(times):
-                    f.write(f"  q={i+4}: {time:.6f}\n")
+            f.write("Rehash Timing Results\n")
+            f.write("====================\n\n")
+            for strategy in ['no_rehash', 'double', 'add_10000']:
+                f.write(f"\n{strategy} strategy:\n")
+                for i, time in enumerate(results[strategy]):
+                    f.write(f"q={i+4}: {time:.6f}\n")
 
     def _save_load_factor_results(self, load_factors, results, filename):
         with open(filename, 'w') as f:

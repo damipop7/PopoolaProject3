@@ -1,62 +1,123 @@
-successful:
-  q=4: 0.000000
-  q=5: 0.000000
-  q=6: 0.000000
-  q=7: 0.000000
-  q=8: 0.000000
-  q=9: 0.000000
-  q=10: 0.000000
-  q=11: 0.000000
-  q=12: 0.000000
-  q=13: 0.000000
-  q=14: 0.000000
-  q=15: 0.000000
-  q=16: 0.000000
-  q=17: 0.000000
-  q=18: 0.000000
-  q=19: 0.000001
-  q=20: 0.000002
-  q=21: 0.000003
-  q=22: 0.000005
-  q=23: 0.000007
-  q=24: 0.000009
-  q=25: 0.000010
-  q=26: 0.000012
-  q=27: 0.000013
-  q=28: 0.000014
-  q=29: 0.000015
-  q=30: 0.000015
-  q=31: 0.000019
-  q=32: 0.000016
-  q=33: 0.000017
-unsuccessful:
-  q=4: 0.000000
-  q=5: 0.000000
-  q=6: 0.000000
-  q=7: 0.000000
-  q=8: 0.000000
-  q=9: 0.000000
-  q=10: 0.000000
-  q=11: 0.000000
-  q=12: 0.000000
-  q=13: 0.000000
-  q=14: 0.000000
-  q=15: 0.000000
-  q=16: 0.000000
-  q=17: 0.000000
-  q=18: 0.000003
-  q=19: 0.000008
-  q=20: 0.000044
-  q=21: 0.000130
-  q=22: 0.000226
-  q=23: 0.000367
-  q=24: 0.000530
-  q=25: 0.000721
-  q=26: 0.000951
-  q=27: 0.001210
-  q=28: 0.001438
-  q=29: 0.001718
-  q=30: 0.002100
-  q=31: 0.002972
-  q=32: 0.002613
-  q=33: 0.002962
+Load Factor Analysis Results
+===========================
+
+Load Factor: 0.100
+Successful Search Time: 0.000001
+Unsuccessful Search Time: 0.000001
+
+Load Factor: 0.131
+Successful Search Time: 0.000001
+Unsuccessful Search Time: 0.000002
+
+Load Factor: 0.161
+Successful Search Time: 0.000001
+Unsuccessful Search Time: 0.000001
+
+Load Factor: 0.192
+Successful Search Time: 0.000001
+Unsuccessful Search Time: 0.000001
+
+Load Factor: 0.223
+Successful Search Time: 0.000001
+Unsuccessful Search Time: 0.000001
+
+Load Factor: 0.253
+Successful Search Time: 0.000001
+Unsuccessful Search Time: 0.000001
+
+Load Factor: 0.284
+Successful Search Time: 0.000001
+Unsuccessful Search Time: 0.000001
+
+Load Factor: 0.315
+Successful Search Time: 0.000001
+Unsuccessful Search Time: 0.000001
+
+Load Factor: 0.346
+Successful Search Time: 0.000000
+Unsuccessful Search Time: 0.000001
+
+Load Factor: 0.376
+Successful Search Time: 0.000000
+Unsuccessful Search Time: 0.000001
+
+Load Factor: 0.407
+Successful Search Time: 0.000000
+Unsuccessful Search Time: 0.000001
+
+Load Factor: 0.438
+Successful Search Time: 0.000000
+Unsuccessful Search Time: 0.000001
+
+Load Factor: 0.468
+Successful Search Time: 0.000000
+Unsuccessful Search Time: 0.000001
+
+Load Factor: 0.499
+Successful Search Time: 0.000001
+Unsuccessful Search Time: 0.000001
+
+Load Factor: 0.530
+Successful Search Time: 0.000001
+Unsuccessful Search Time: 0.000021
+
+Load Factor: 0.560
+Successful Search Time: 0.000001
+Unsuccessful Search Time: 0.000029
+
+Load Factor: 0.591
+Successful Search Time: 0.000001
+Unsuccessful Search Time: 0.000032
+
+Load Factor: 0.622
+Successful Search Time: 0.000001
+Unsuccessful Search Time: 0.000053
+
+Load Factor: 0.652
+Successful Search Time: 0.000002
+Unsuccessful Search Time: 0.000070
+
+Load Factor: 0.683
+Successful Search Time: 0.000002
+Unsuccessful Search Time: 0.000085
+
+Load Factor: 0.714
+Successful Search Time: 0.000004
+Unsuccessful Search Time: 0.000151
+
+Load Factor: 0.744
+Successful Search Time: 0.000006
+Unsuccessful Search Time: 0.000278
+
+Load Factor: 0.775
+Successful Search Time: 0.000009
+Unsuccessful Search Time: 0.001543
+
+Load Factor: 0.806
+Successful Search Time: 0.000028
+Unsuccessful Search Time: 0.002362
+
+Load Factor: 0.837
+Successful Search Time: 0.000039
+Unsuccessful Search Time: 0.003194
+
+Load Factor: 0.867
+Successful Search Time: 0.000038
+Unsuccessful Search Time: 0.004379
+
+Load Factor: 0.898
+Successful Search Time: 0.000041
+Unsuccessful Search Time: 0.005044
+
+Load Factor: 0.929
+Successful Search Time: 0.000042
+Unsuccessful Search Time: 0.004968
+
+Load Factor: 0.959
+Successful Search Time: 0.000042
+Unsuccessful Search Time: 0.004789
+
+Load Factor: 0.990
+Successful Search Time: 0.000039
+Unsuccessful Search Time: 0.004537
+
