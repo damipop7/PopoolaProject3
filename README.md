@@ -38,14 +38,13 @@ python -m unittest test_hash_table.py
 ## Conclusions
 
 ### A. Graph Analysis
-The timing graphs show:
-- Rehash timing reveals the cost of different resize strategies
-- Load factor graphs demonstrate the theoretical vs actual performance
-- The curves follow the expected mathematical models
+- Rehash timing shows exponential growth with table size
+- Load factor performance degrades as λ approaches 1
+- Linear probing matches theoretical predictions
 
 ### B. Hash Table Addition Time
-- Double strategy: O(n) amortized time for insertions
-- Add 10000 strategy: More frequent resizing but smaller individual costs
+- Double strategy: O(n) amortized cost
+- Add 10000 strategy: More frequent but smaller resizes
 
 ### C. Strategy Comparison
 Double Strategy:
@@ -53,21 +52,21 @@ Double Strategy:
 - Cons: Large individual resize operations
 
 Add 10000 Strategy:
-- Pros: More predictable resize times
-- Cons: More frequent resizing operations
+- Pros: Predictable resize operations
+- Cons: More frequent resizing needed
 
 ### D. Optimal Load Factor
-Based on the timing results, a load factor between 0.5 and 0.7 provides:
-- Good balance between space usage and performance
-- Acceptable search times for both successful and unsuccessful searches
-- Reasonable resize frequency
+Based on measurements, λ ≈ 0.7 provides:
+- Good space utilization
+- Reasonable search times
+- Acceptable resize frequency
 
 ### E. Linear Probe Performance
-The measured results closely match the theoretical predictions:
-- Successful searches follow the 1/2(1 + 1/(1-λ)) curve
-- Unsuccessful searches follow the 1/2(1 + 1/(1-λ)²) curve
+Measured results closely match theoretical formulas:
+- Successful searches: 1/2(1 + 1/(1-λ))
+- Unsuccessful searches: 1/2(1 + 1/(1-λ)²)
 
 ### F. Surprising Results
-- The stability of performance up to λ = 0.7
-- The sharp degradation after λ = 0.8
-- The consistency between theoretical and actual results
+- Performance stability up to λ = 0.7
+- Sharp degradation after λ = 0.8
+- Close match to theoretical predictions

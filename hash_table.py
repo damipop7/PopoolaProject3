@@ -15,11 +15,7 @@ class HashTable:
         self.count = 0
 
     def _hash(self, string):
-        """
-        Compute the hash value for a string.
-        :param string: The string to hash.
-        :return: The hash value mod the table size.
-        """
+        """Compute hash value for string"""
         return hash(string) % self.size
 
     def _resize(self):
@@ -31,14 +27,12 @@ class HashTable:
             self.size *= 2
         elif self.resize_strategy == 2:
             self.size += 10000
-        else:
-            raise ValueError("Invalid resize strategy. Use 1 (double size) or 2 (add 10000).")
-
+        
         self.table = [None] * self.size
         self.count = 0
-
+        
         for item in old_table:
-            if item is not None:
+            if item is not None and item != self.DELETED:
                 self.insert(item)
 
     def insert(self, string_to_insert):
